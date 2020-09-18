@@ -4,18 +4,27 @@ import time
 from tensorflow.keras.models import load_model
 from skimage import transform
 from skimage import exposure
+import argparse
+
+
+ap = argparse.ArgumentParser()
+ap.add_argument("-m","--model", default = "/content/traffic-sign-recognition-tutorial-code/output/trafficsignnet.model", help="path to the model")
+ap.add_argument("-i","--image", default = "input.jpg", help="path to the image")
+ap.add_argument("-c","--cascade", default = "cascade.xml", help="for detecting traffic signs, contains haar features")
+args = vars(ap.parse_args())
+
 
 #cascade.xml contains features needed to find traffic signs
-cascade = cv2.CascadeClassifier('cascade.xml')
+cascade = cv2.CascadeClassifier(args["cascade"])
 
-img = cv2.imread('input.jpg')
+
+img = cv2.imread(args["image"])
 full_image = np.array(img)
-#gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) # no need to convert to gray
 
-#loading conv model
+
+#loading CNN model
 print("[INFO] loading model....")
-#set model path here
-model = load_model('/content/traffic-sign-recognition-tutorial-code/output/trafficsignnet.model')
+model = load_model(args["model"])
 labelnames = open("signnames.csv").read().strip().split("\n")[1:]
 labelnames = [l.split(",")[1] for l in labelnames]
 
