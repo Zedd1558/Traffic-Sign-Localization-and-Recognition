@@ -38,10 +38,4 @@ The ROIs are cropped and passed to a CNN implemented on tensorflow. We  used pub
 </p>
 
 ### Required libraries
-PyQt, Numpy, OpenCV3, qimage2ndarray
-
-<p align="center">
- <img alt="editing" src="https://github.com/Zedd1558/traffic-sign-recognition-tutorial-code/blob/master/documentation/best_model_confusion_matrix.png">
-</p>
-
-
+Tensorflow, OpenCV, Numpy, Matplotlib, sci-kit learn
