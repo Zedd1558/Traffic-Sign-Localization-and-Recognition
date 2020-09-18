@@ -1,44 +1,49 @@
-# traffic-sign-recognition-tutorial-code
-This is  code i wrote while following a tutorial made by pyimagsearch that uses keras to train a deep convolutional neural network to recognise traffic signs
-The full tutorial can be found here : https://www.pyimagesearch.com/2019/11/04/traffic-sign-classification-with-keras-and-deep-learning/
-
-Traffic sign classification is the process of automatically recognizing traffic signs along the road, including speed limit signs, yield signs, merge signs, etc. Being able to automatically recognize traffic signs enables us to build “smarter cars”.
-
-Self-driving cars need traffic sign recognition in order to properly parse and understand the roadway. Similarly, “driver alert” systems inside cars need to understand the roadway around them to help aid and protect drivers.
-
-Traffic sign recognition is just one of the problems that computer vision and deep learning can solve.
-
-The dataset used to train and test this deep neural network is  German Traffic Sign Recognition Benchmark (GTSRB).It can be downloaded from https://www.kaggle.com/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign
-Create a new folder in teh project root called data and place the extracted dataset there.
-
-
-## Configuring-your-development-environment
-
-
-run these commands install all the dependencies:
-
-  pip install opencv-contrib-python
+<h1 align="center">
+<p>Traffic Sign Localization and Recognition
+</h1>
+<h3 align="center">
+<p>a two stage system that finds out traffic signs from a given image then recognizes their class
   
-  pip install numpy
-  
-  pip install scikit-learn
-  
-  pip install scikit-image
-  
-  pip install imutils
-  
-  pip install matplotlib
-  
-  pip install tensorflow==2.0.0 # or tensorflow-gpu
-  
+</h3>
 
-## Tarining the model:
-Open a command promt and run the command below:
-  python train.py --dataset gtsrb-german-traffic-sign --model output/trafficsignnet.model --plot output/plot.png
- 
- 
- 
-## Predictions:
-Open up a terminal and execute the following command:
-  python predict.py --model output/trafficsignnet.model --images gtsrb-german-traffic-sign/Test --examples examples
-If you want to test the model on custom images, set the --images argument to the path of the images. After testing, the scipt will save randomly chosen examples in the --examples path
+
+
+<p align="center">
+ <img alt="cover" src="https://github.com/Zedd1558/traffic-sign-recognition-tutorial-code/blob/master/documentation/overview.jpg" height="50%" width="50%">
+</p>
+
+
+### Implementation
+#### Localization 
+To find out the regions containing traffic signs we used a
+well known machine learning technique called Haar Cascade
+Classifier. 
+We used <a href="https://amin-ahmadi.com/cascade-trainer-gui/">this GUI tool</a> to train our cascade classifier using 500 positive images (samples) i.e. images of traffic signs from GTRSB dataset and 500 negative images of random objects. The features learned are contained in the output *cascade.xml* which is used by *OpenCV* to finds out the Region of Interests that might contain traffic sign.
+#### Recognition
+The ROIs are cropped and passed to a CNN implemented on tensorflow. We  used  popular  and  publicly available dataset German Traffic Sign Recognition Benchmark. GTSRBdataset  is  a  multi-category  classification  competition  held  at IJCNN  2011.  The  dataset  is  composed  of  50,000  images  intotal and 43 classes. 
+
+![model](mode_architecture.jpg "model architecture") ![dataset](data.png "samples from dataset")
+
+<h4 align="center">
+<p>let's see an exmaple
+</h4>
+<p align="center">
+ <img alt="editing" src="https://github.com/Zedd1558/Image-Inpainter/blob/master/demo/editpage.jpg">
+</p>
+<h4 align="center">
+<p>removes text quite well!
+</h4>
+
+### Required libraries
+PyQt, Numpy, OpenCV3, qimage2ndarray
+
+### How to run
+open up console in the project directory and enter this 
+```
+python inpainter.py
+```
+<p align="center">
+ <img alt="editing" src="https://github.com/Zedd1558/traffic-sign-recognition-tutorial-code/blob/master/documentation/best_model_confusion_matrix.png">
+</p>
+
+
