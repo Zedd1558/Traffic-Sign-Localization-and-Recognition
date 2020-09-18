@@ -1,7 +1,7 @@
 <h1 align="center">
 <p>Traffic Sign Localization and Recognition
 </h1>
-<h3 align="center">
+<h6 align="center">
 <p>a two stage system that finds out traffic signs from a given image then recognizes their class
   
 </h3>
