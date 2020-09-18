@@ -28,6 +28,12 @@ The ROIs are cropped and passed to a CNN implemented on tensorflow. We  used pub
 
 ![model](mode_architecture.jpg "model architecture") ![dataset](data.png "samples from dataset")
 
+<p float="left">
+  <img src="https://github.com/Zedd1558/traffic-sign-recognition-tutorial-code/blob/master/documentation/model_architecture.jpg" width="100" />
+  <img src="https://github.com/Zedd1558/traffic-sign-recognition-tutorial-code/blob/master/documentation/data.png" width="100" /> 
+</p>
+
+
 <h4 align="center">
 <p>let's see an exmaple
 </h4>
