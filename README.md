@@ -44,3 +44,6 @@ Detailed documentation of the project can be found <a href="https://github.com/Z
 #### Remarks
 This is an extension of <a href="https://www.pyimagesearch.com/2019/11/04/traffic-sign-classification-with-keras-and-deep-learning/">this tutorial</a> made by *pyimagsearch*. In this tutorial he shows us how to classify cropped traffic sign image using tensorflow. We extend his work to build an object detection system by implementing both localization and recognition stages.
 
+#### Contributors
+https://github.com/Farabi-shafkat
+https://github.com/Zedd1558
