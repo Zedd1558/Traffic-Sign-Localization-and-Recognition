@@ -29,7 +29,7 @@ We used <a href="https://amin-ahmadi.com/cascade-trainer-gui/">this GUI tool</a>
 
 
 #### Recognition
-The ROIs are cropped and passed to a CNN implemented on tensorflow. We  used publicly available dataset German Traffic Sign Recognition Benchmark to train our model. GTSRBdataset  is  a  multi-category  classification  competition  held  at IJCNN  2011.  The  dataset  is  composed  of  50,000  images  intotal and 43 classes. 
+The ROIs are cropped and passed to a CNN implemented on tensorflow. We  used publicly available dataset German Traffic Sign Recognition Benchmark to train our model. GTSRB dataset  is  a  multi-category  classification  competition  held  at IJCNN  2011.  The  dataset  is  composed  of  50,000  images  in total and 43 classes. The model is trained end to end using Adam optimizer with a initial learning rate of *0.0001* and a learning rate decay of *0.0001/(numberof epoch×0.5)*. The model was trained for 50 epochs with mini batch size of 64.
 
 <p align="center">
   <img src="https://github.com/Zedd1558/traffic-sign-recognition-tutorial-code/blob/master/documentation/data.png" width="200" />
