@@ -14,8 +14,13 @@
 ### How to run
 open up console in the project directory and enter this 
 ```
+python detectionPlusRecognition.py --cascade CASCADE_PATH --model MODEL_PATH --image IMAGE_PATH
+```
+the arguments are optional. If you dont provide them then the default values, *cascde.xml*, *output/trafficsignnet.model* and *input.jpg* are used.
+```
 python detectionPlusRecognition.py
 ```
+
 ### Required libraries
 Tensorflow, OpenCV, Numpy, Matplotlib, sci-kit learn
 
