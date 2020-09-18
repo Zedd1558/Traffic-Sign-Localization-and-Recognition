@@ -16,13 +16,15 @@ open up console in the project directory and enter this
 ```
 python detectionPlusRecognition.py
 ```
+### Required libraries
+Tensorflow, OpenCV, Numpy, Matplotlib, sci-kit learn
 
 ### Implementation
 #### Localization 
 To find out the regions containing traffic signs we used a
 well known machine learning technique called Haar Cascade
 Classifier. 
-We used <a href="https://amin-ahmadi.com/cascade-trainer-gui/">this GUI tool</a> to train our cascade classifier using 500 positive images (samples) i.e. images of traffic signs from GTRSB dataset and 500 negative samples i.e. images of random objects. The features learned are contained in the output *cascade.xml* which is used by *OpenCV* to find out the Region of Interests that might contain traffic sign.
+We used <a href="https://amin-ahmadi.com/cascade-trainer-gui/">this GUI tool</a> to train our cascade classifier using 500 positive images (samples) i.e. images of traffic signs from GTRSB dataset and 500 negative samples i.e. images of random objects. The features learned are contained in the output *cascade.xml* which is used by *OpenCV* to find out the Region of Interests (ROI) that might contain traffic sign.
 
 <p align="center">
   <img src="https://github.com/Zedd1558/traffic-sign-recognition-tutorial-code/blob/master/documentation/detect.png" width="400" /></p>
@@ -37,5 +39,4 @@ The ROIs are cropped and passed to a CNN implemented on tensorflow. We  used pub
     <img src="https://github.com/Zedd1558/traffic-sign-recognition-tutorial-code/blob/master/documentation/loss(1).png" width="200" />
 </p>
 
-### Required libraries
-Tensorflow, OpenCV, Numpy, Matplotlib, sci-kit learn
+
