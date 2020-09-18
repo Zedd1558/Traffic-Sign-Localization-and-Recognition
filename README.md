@@ -28,7 +28,7 @@ The ROIs are cropped and passed to a CNN implemented on tensorflow. We  used  po
 <p>let's see an exmaple
 </h4>
 <p align="center">
- <img alt="editing" src="https://github.com/Zedd1558/Image-Inpainter/blob/master/demo/editpage.jpg">
+ <img alt="editing" src="">
 </p>
 <h4 align="center">
 <p>removes text quite well!
