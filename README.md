@@ -28,6 +28,8 @@ The ROIs are cropped and passed to a CNN implemented on tensorflow. We  used pub
 
 <p align="center">
   <img src="https://github.com/Zedd1558/traffic-sign-recognition-tutorial-code/blob/master/documentation/data.png" width="300" />
+    <img src="https://github.com/Zedd1558/traffic-sign-recognition-tutorial-code/blob/master/documentation/accuracy.png" width="300" />
+    <img src="https://github.com/Zedd1558/traffic-sign-recognition-tutorial-code/blob/master/documentation/loss(1).png" width="300" />
 </p>
 
 ### Required libraries
