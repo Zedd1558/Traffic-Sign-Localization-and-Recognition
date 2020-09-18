@@ -27,9 +27,9 @@ We used <a href="https://amin-ahmadi.com/cascade-trainer-gui/">this GUI tool</a>
 The ROIs are cropped and passed to a CNN implemented on tensorflow. We  used publicly available dataset German Traffic Sign Recognition Benchmark to train our model. GTSRBdataset  is  a  multi-category  classification  competition  held  at IJCNN  2011.  The  dataset  is  composed  of  50,000  images  intotal and 43 classes. 
 
 <p align="center">
-  <img src="https://github.com/Zedd1558/traffic-sign-recognition-tutorial-code/blob/master/documentation/data.png" width="300" />
-    <img src="https://github.com/Zedd1558/traffic-sign-recognition-tutorial-code/blob/master/documentation/accuracy.png" width="300" />
-    <img src="https://github.com/Zedd1558/traffic-sign-recognition-tutorial-code/blob/master/documentation/loss(1).png" width="300" />
+  <img src="https://github.com/Zedd1558/traffic-sign-recognition-tutorial-code/blob/master/documentation/data.png" width="200" />
+    <img src="https://github.com/Zedd1558/traffic-sign-recognition-tutorial-code/blob/master/documentation/accuracy.png" width="200" />
+    <img src="https://github.com/Zedd1558/traffic-sign-recognition-tutorial-code/blob/master/documentation/loss(1).png" width="200" />
 </p>
 
 ### Required libraries
