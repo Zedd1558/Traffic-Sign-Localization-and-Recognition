@@ -46,4 +46,5 @@ This is an extension of <a href="https://www.pyimagesearch.com/2019/11/04/traffi
 
 #### Contributors
 https://github.com/Farabi-shafkat
+
 https://github.com/Zedd1558
