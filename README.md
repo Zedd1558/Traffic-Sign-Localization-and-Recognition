@@ -7,7 +7,7 @@
 </h3>
 
 <p align="center">
- <img alt="cover" src="https://github.com/Zedd1558/traffic-sign-recognition-tutorial-code/blob/master/documentation/overview.jpg" height="50%" width="50%">
+ <img alt="cover" src="https://github.com/Zedd1558/traffic-sign-recognition-tutorial-code/blob/master/documentation/overview.jpg" height="60%" width="60%">
 </p>
 
 
