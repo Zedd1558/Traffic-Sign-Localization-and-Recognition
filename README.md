@@ -27,22 +27,8 @@ We used <a href="https://amin-ahmadi.com/cascade-trainer-gui/">this GUI tool</a>
 The ROIs are cropped and passed to a CNN implemented on tensorflow. We  used publicly available dataset German Traffic Sign Recognition Benchmark to train our model. GTSRBdataset  is  a  multi-category  classification  competition  held  at IJCNN  2011.  The  dataset  is  composed  of  50,000  images  intotal and 43 classes. 
 
 <p align="center">
-  <img src="https://github.com/Zedd1558/traffic-sign-recognition-tutorial-code/blob/master/documentation/model_architecture.jpg" width="700" />
+  <img src="https://github.com/Zedd1558/traffic-sign-recognition-tutorial-code/blob/master/documentation/data.png" width="300" />
 </p>
-<p>
-  <img src="https://github.com/Zedd1558/traffic-sign-recognition-tutorial-code/blob/master/documentation/data.png" width="300" /> 
-</p>
-
-
-<h4 align="center">
-<p>let's see an exmaple
-</h4>
-<p align="center">
- <img alt="editing" src="">
-</p>
-<h4 align="center">
-<p>removes text quite well!
-</h4>
 
 ### Required libraries
 PyQt, Numpy, OpenCV3, qimage2ndarray
