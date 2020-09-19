@@ -46,10 +46,10 @@ The ROIs are cropped and passed to a CNN implemented on tensorflow. We  used pub
 
 Detailed documentation of the project can be found <a href="https://github.com/Zedd1558/Traffic-Sign-Localization-and-Recognition/blob/master/documentation/ML_project_report.pdf">here</a>.
 
-#### Remarks
+### Remarks
 This is an extension of <a href="https://www.pyimagesearch.com/2019/11/04/traffic-sign-classification-with-keras-and-deep-learning/">this tutorial</a> made by *pyimagsearch*. In this tutorial he shows us how to classify cropped traffic sign image using tensorflow. We extend his work to build an object detection system by implementing both localization and recognition stages.
 
-#### Contributors
+### Contributors
 https://github.com/Farabi-shafkat
 
 https://github.com/Zedd1558
