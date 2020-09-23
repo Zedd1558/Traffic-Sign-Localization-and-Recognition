@@ -10,6 +10,12 @@ import os
 import random
 import imutils
 
+
+# provide path to a trained model.
+# provide path to a folder containing cropped traffic sign images to be predicted.
+# provide path to a output directory where the output images are stored.
+# it will predict the traffic signs the attach a text label on the images and save it to a given output directory.
+
 ap = argparse.ArgumentParser()
 ap.add_argument("-m","--model",required=True,help="path to the model")
 ap.add_argument("-i","--images",required=True,help="path to the images")

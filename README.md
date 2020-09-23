@@ -14,16 +14,18 @@
 ### How to run
 open up console in the project directory and enter this 
 ```
-python detectionPlusRecognition.py --cascade CASCADE_PATH --model MODEL_PATH --image IMAGE_PATH
+python localizeAndRecognize.py --cascade CASCADE_PATH --model MODEL_PATH --image IMAGE_PATH
 ```
-the arguments are optional. If you dont provide them then the default values, *cascde.xml*, *output/trafficsignnet.model* and *input.jpg* are used.
+the arguments are optional. If you dont provide them then the default values, *cascde.xml*, *trainedModel/bestModel.h5* and *input.jpg* are used.
 ```
-python detectionPlusRecognition.py
+python localizeAndRecognize.py
 ```
 
 ### Required libraries
-Tensorflow, OpenCV, Numpy, Matplotlib, sci-kit learn
-
+Tensorflow 2.0, OpenCV 3, Numpy, Matplotlib, sci-kit learn
+```
+pip install requirements.txt
+```
 ### Implementation
 #### Localization 
 To find out the regions containing traffic signs we used a
