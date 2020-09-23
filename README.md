@@ -20,7 +20,7 @@ the arguments are optional. If you dont provide them then the default values, *c
 ```
 python localizeAndRecognize.py
 ```
-
+There are some full size road images on *examples_fullsize* folder. You can use them for testing the system.
 ### Required libraries
 Tensorflow 2.3.0, OpenCV 3, Numpy, Matplotlib, sci-kit learn
 ```
