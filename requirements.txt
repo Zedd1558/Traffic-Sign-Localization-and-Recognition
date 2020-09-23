@@ -4,4 +4,4 @@ scikit-learn
 scikit-image
 imutils
 matplotlib
-tensorflow==2.0.0
+tensorflow==2.3.0

@@ -22,7 +22,7 @@ python localizeAndRecognize.py
 ```
 
 ### Required libraries
-Tensorflow 2.0, OpenCV 3, Numpy, Matplotlib, sci-kit learn
+Tensorflow 2.3.0, OpenCV 3, Numpy, Matplotlib, sci-kit learn
 ```
 pip install -r requirements.txt
 ```
