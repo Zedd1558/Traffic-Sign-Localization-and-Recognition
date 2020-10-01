@@ -21,6 +21,10 @@ the arguments are optional. If you dont provide them then the default values, *c
 python localizeAndRecognize.py
 ```
 There are some full size road images on *examples_fullsize* folder. You can use them for testing the system.
+
+### Remarks
+This is an extension of <a href="https://www.pyimagesearch.com/2019/11/04/traffic-sign-classification-with-keras-and-deep-learning/">this tutorial</a> made by *pyimagsearch*. In this tutorial he shows us how to classify cropped traffic sign image using tensorflow. We extend his work to build an object detection system by implementing both localization and recognition stages.
+
 ### Required libraries
 Tensorflow 2.3.0, OpenCV 3, Numpy, Matplotlib, sci-kit learn
 ```
@@ -47,9 +51,6 @@ The ROIs are cropped and passed to a CNN implemented on tensorflow. We  used pub
 </p>
 
 Detailed documentation of the project can be found <a href="https://github.com/Zedd1558/Traffic-Sign-Localization-and-Recognition/blob/master/Report_on_the_Project.pdf">here</a>.
-
-### Remarks
-This is an extension of <a href="https://www.pyimagesearch.com/2019/11/04/traffic-sign-classification-with-keras-and-deep-learning/">this tutorial</a> made by *pyimagsearch*. In this tutorial he shows us how to classify cropped traffic sign image using tensorflow. We extend his work to build an object detection system by implementing both localization and recognition stages.
 
 ### Contributors
 https://github.com/Farabi-shafkat
